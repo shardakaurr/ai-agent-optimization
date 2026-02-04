@@ -29,34 +29,6 @@ This project addresses these issues through a structured framework:
 
 ---
 
-## Repository Structure
-ai-agent-optimization/
-│
-├── agents/
-│ ├── AGENTS.md
-│ └── persona-content-engineer.md
-│
-├── experiments/
-│ ├── baseline.md
-│ └── optimized-run-1.md
-│
-├── results/
-│ └── comparison.md
-│
-├── specs/
-│ └── content-spec.md
-│
-├── mcp/
-│ └── playwright-mcp.md
-│
-├── docs/
-│ ├── evaluation-validation.md
-│ ├── automated-validation-ci.md
-│ ├── demo-script.md
-│ └── viva-qa.md
-│
-└── README.md
-
 
 ---
 
