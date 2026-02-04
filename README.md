@@ -30,3 +30,78 @@ This project addresses these issues through a structured framework:
 ---
 
 ## Repository Structure
+ai-agent-optimization/
+│
+├── agents/
+│ ├── AGENTS.md
+│ └── persona-content-engineer.md
+│
+├── experiments/
+│ ├── baseline.md
+│ └── optimized-run-1.md
+│
+├── results/
+│ └── comparison.md
+│
+├── specs/
+│ └── content-spec.md
+│
+├── mcp/
+│ └── playwright-mcp.md
+│
+├── docs/
+│ ├── evaluation-validation.md
+│ ├── automated-validation-ci.md
+│ ├── demo-script.md
+│ └── viva-qa.md
+│
+└── README.md
+
+
+---
+
+## Evaluation and Validation
+The project introduces a multi-layer evaluation approach:
+
+- **Instruction-Level Validation:** Manual review of logic, completeness, and clarity.
+- **Cross-LLM Review:** A secondary LLM evaluates content to reduce single-model bias.
+- **Tool-Based Validation (Conceptual):** MCP tools such as Playwright can be used to validate UI steps and detect gaps.
+- **Rubric-Based Scoring:** Content is graded using human-readable criteria such as accuracy, completeness, readability, and specification compliance.
+
+---
+
+## Automated Validation Design
+The validation process is designed to run as part of a CI/CD workflow:
+- Documentation updates trigger a validation agent
+- The agent applies rules, reviewer checks, and optional tool-based validation
+- A completed rubric with scores and feedback is generated automatically
+
+This design enables scalable and repeatable quality checks for AI-assisted documentation.
+
+---
+
+## What This Project Is
+- A **local agent instruction framework**
+- A **research-driven evaluation and validation system**
+- A **CI/CD-ready design for automated quality assessment**
+
+---
+
+## What This Project Is Not
+- Not a VS Code extension
+- Not an installable software product
+- Not a chatbot or runtime application
+
+---
+
+## Use Cases
+- Software teams validating AI-generated documentation
+- Open-source projects improving documentation quality
+- Educational platforms creating reliable beginner guides
+- CI/CD pipelines enforcing documentation quality gates
+
+---
+
+## Summary
+This project demonstrates how AI-generated content can be transformed from a best-effort output into a **reliable, testable, and production-ready artifact** using structured agent instructions, evaluation frameworks, and automated validation design.
+
