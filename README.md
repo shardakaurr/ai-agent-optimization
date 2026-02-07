@@ -81,6 +81,13 @@ completeness, and a strong developer experience.
 
 ---
 
+## Validation Ownership
+Validation responsibilities are clearly separated across agents.
+A defined validation coverage matrix ensures accuracy, completeness,
+and consistent developer experience without overlapping agent roles.
+
+---
+
 ## Summary
 This project demonstrates how AI-generated content can be transformed from a best-effort output into a **reliable, testable, and production-ready artifact** using structured agent instructions, evaluation frameworks, and automated validation design.
 
