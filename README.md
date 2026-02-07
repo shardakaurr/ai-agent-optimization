@@ -95,6 +95,14 @@ improvements and longer-term extensions such as automation and localization.
 
 ---
 
+## Localization and App Extension
+After validation and refinement, documentation can be localized using
+automated translation workflows. A future app concept demonstrates how
+this system could scale to generate validated, multi-language outputs
+from a single prompt.
+
+---
+
 ## Summary
 This project demonstrates how AI-generated content can be transformed from a best-effort output into a **reliable, testable, and production-ready artifact** using structured agent instructions, evaluation frameworks, and automated validation design.
 
