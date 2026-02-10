@@ -102,6 +102,53 @@ this system could scale to generate validated, multi-language outputs
 from a single prompt.
 
 ---
+## Setup and Run Instructions
+
+### Prerequisites
+
+* GitHub account
+* Git installed on your system
+* Visual Studio Code
+* GitHub Copilot enabled in VS Code
+
+---
+
+### Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/shardakaurr/ai-agent-optimization.git
+```
+
+2. Open the project in VS Code:
+
+```bash
+code ai-agent-optimization
+```
+
+3. Ensure GitHub Copilot Chat is enabled inside VS Code.
+
+---
+
+### How to Run the Solution
+
+This project does **not** run as a traditional application.
+
+The solution is executed through a documentation workflow using GitHub Copilot Chat in VS Code:
+
+1. Open documentation files located in the `experiments/` folder.
+2. Use **GitHub Copilot Chat (VS Code)** as different agents:
+
+   * Authoring Agent
+   * Validation Agent
+   * Refinement Agent
+3. Apply the evaluation rubric defined in `docs/rubric.md`.
+4. Record grading results in `results/rubric-run.md`.
+
+The final output of the run is validated and refined documentation, not executable code.
+
+---
 
 ## Summary
 This project demonstrates how AI-generated content can be transformed from a best-effort output into a **reliable, testable, and production-ready artifact** using structured agent instructions, evaluation frameworks, and automated validation design.
