@@ -153,3 +153,13 @@ The final output of the run is validated and refined documentation, not executab
 ## Summary
 This project demonstrates how AI-generated content can be transformed from a best-effort output into a **reliable, testable, and production-ready artifact** using structured agent instructions, evaluation frameworks, and automated validation design.
 
+## 📂 Documentation
+
+The detailed academic and project documentation can be found in the `/docs` folder.
+
+| Document | Description |
+|---------|-------------|
+| docs/setup.md | Instructions to install and run the web application |
+| docs/blog_post.md | Project walkthrough and explanation |
+| docs/automated-validation-ci.md | Automated validation workflow design |
+| docs/chatagent-audience-concept.md | Agent audience and architecture concepts |
