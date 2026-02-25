@@ -125,3 +125,28 @@ but **structured collaboration, validation, and continuous improvement**.
 
 By treating AI agents as specialists rather than generalists, we can build systems that
 are both powerful and trustworthy.
+
+# AI Agent Optimization – Multi-Agent Documentation System
+
+## Introduction
+This project demonstrates a multi-agent AI system designed to generate optimized documentation workflows.
+
+## Problem
+Traditional AI coding assistants are general-purpose and lack structured validation.
+
+## Solution
+We designed a multi-agent architecture:
+Planning → Authoring → Validation → Refinement
+
+## Features
+- Flask Web UI
+- Agent Skills Integration
+- Architecture Visualization
+- Prompt History Panel
+
+## How It Works
+User enters a documentation request.
+Agents execute sequentially and produce optimized output.
+
+## Result
+A professional AI dashboard that demonstrates agent orchestration and evaluation workflows.

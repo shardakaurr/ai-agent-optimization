@@ -75,7 +75,34 @@ This provides a UI-like experience without requiring a separate application.
 4. Record results in `results/rubric-run.md`.
 
 ---
+# Setup Instructions – AI Agent Optimization
 
+## Requirements
+- Python 3.x
+- Flask
+- VS Code
+
+## Installation Steps
+
+1. Install Python from python.org
+2. Open project folder in VS Code
+3. Open terminal and run:
+
+python -m pip install flask
+
+## Run Application
+
+Navigate to project folder:
+
+cd webapp
+
+Run:
+
+python app.py
+
+## Open Browser
+
+http://127.0.0.1:5000
 ## Summary
 
 The project uses a documentation-first workflow where CLI-style prompts drive agent execution and GitHub Markdown acts as the viewing interface. This setup keeps the system simple while demonstrating scalable interaction models.

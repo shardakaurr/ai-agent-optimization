@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Agent Optimization UI</title>
+</head>
+<style>
+.agent-card {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 5px;
+    width: 220px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+</style>
+<style>
+.timeline {
+    margin-top: 20px;
+    padding-left: 20px;
+    border-left: 3px solid black;
+}
+
+.timeline-step {
+    margin: 10px 0;
+    font-size: 16px;
+}
+</style>
+<style>
+.dashboard {
+    display: flex;
+}
+
+.left-panel {
+    width: 40%;
+    padding: 10px;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 10px;
+}
+</style>
+<style>
+.architecture-flow {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed #444;
+    border-radius: 8px;
+}
+.arch-step {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+}
+</style>
+<body>
+
+<h1>AI Agent Optimization Web UI</h1>
+<h3>System Architecture</h3>
+<h3>Agent Architecture Flow</h3>
+<div class="architecture-flow">
+    <div class="arch-step">User Input</div>
+    →
+    <div class="arch-step">Planning Agent</div>
+    →
+    <div class="arch-step">Authoring Agent</div>
+    →
+    <div class="arch-step">Validation Agent</div>
+    →
+    <div class="arch-step">Refinement Agent</div>
+</div>
+<ul>
+    <li>Web UI Layer</li>
+    <li>Agent Orchestrator (Flask Backend)</li>
+    <li>Agent Skills Layer</li>
+    <li>MCP Integration (Simulation Ready)</li>
+</ul>
+<form method="POST">
+    <input type="text" name="prompt" placeholder="Enter documentation request..." style="width:300px;">
+    <button type="submit">Run Agents</button>
+</form>
+
+<div class="dashboard">
+
+<div class="left-panel">
+
+<h3>System Architecture</h3>
+<ul>
+    <li>Web UI Layer</li>
+    <li>Agent Orchestrator</li>
+    <li>Skills Layer</li>
+    <li>MCP Integration Ready</li>
+</ul>
+
+{% if steps %}
+<h3>Agent Workflow Status:</h3>
+{% for step in steps %}
+<div class="agent-card">{{ step }} ✔</div>
+{% endfor %}
+{% endif %}
+<h3>Prompt History</h3>
+
+{% if history %}
+<ul>
+    {% for item in history %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+</div>
+
+
+<div class="right-panel">
+
+{% if result %}
+<h3>Agent Output:</h3>
+<p>{{ result }}</p>
+{% endif %}
+
+{% if steps %}
+<h3>Agent Execution Timeline:</h3>
+<div class="timeline">
+{% for step in steps %}
+<div class="timeline-step">→ {{ step }}</div>
+{% endfor %}
+</div>
+{% endif %}
+
+</div>
+
+</div>
+</body>
+</html>
